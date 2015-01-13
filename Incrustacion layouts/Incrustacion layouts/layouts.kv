@@ -1,0 +1,73 @@
+# Nombre de la Fila: layouts.kv (Fracmento 1)
+
+<MyGridLayout>:
+	row: 2
+
+	FloatLayout:
+		Button:
+			text: "F1"
+			size_hint: .3, .3
+			pos: 0, 0
+
+	RelativeLayout:
+		Button:
+			text: "R1"
+			size_hint: .3, .3
+			pos: 0, 0
+
+# Nombre de la fila: layouts.kv(fracmento 2)
+
+	GridLayout:
+		cols: 3
+		spacing: 10
+		Button:
+			text: "G1"
+			size_hint_x: None
+			width: 50
+		Button:
+			text: "G2"
+		Button:
+			text: "G3"
+			size_hint_x: None
+			width: 50	
+
+# Nombre de la fila: layouts.kv(fracmento3)
+
+	AnchorLayout:
+		anchor_x: 'right'
+		anchor_y: 'top'
+		Button:
+			text: 'A1'
+			size_hint: [0.5, 0.5]
+		Button:
+			text: 'A2'
+			size_hint: [0.2, 0.2]
+
+# Nombre de la fila: layouts.kv(fracmento4)
+
+	BoxLayout:
+		orientation: 'horizontal'
+		Button:
+			text: 'B1'
+		Button:
+			text: 'B2'
+			size_hint: [2, 0.3]
+			pos_hint: {'y': 0.4}
+		Button:
+			text: 'B3'
+
+# Nombre de la fila: layouts.kv(fracmento4)
+
+	StackLayout:
+		orientation: 'rl-tb'
+		padding: 10
+		Button:
+			text: 'S1'
+
+
+
+
+
+
+
+

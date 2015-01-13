@@ -1,0 +1,14 @@
+# Nombre Fila: Widget.kv
+
+<MyButton@Button>:
+	color: 240, 48, 144, 0.5
+	font_size: 32
+	size: 100, 50
+
+<MyWidget>:
+	MyButton:
+		text: 'Hello'
+		pos: root.x, root.top - self.heigth
+	MyButton:
+		text: 'World'
+		pos: root.right - self.width, root.y
